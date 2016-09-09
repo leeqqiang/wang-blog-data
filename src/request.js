@@ -117,12 +117,12 @@ async.series([
 	log('存档条数 %s', archiveList.length)
 	log('文章条数 %s', articleList.length)
 
-	// async.eachSeries(articleList, (article, next) => {
-	// 	BlogModel.addBlog(article, (err, data) => {
-	// 		log('插入文章 %s', article.title)
-	// 		next(err)
-	// 	})
-	// })
+	async.eachSeries(articleList, (article, next) => {
+		BlogModel.addBlog(article, (err, data) => {
+			log('插入文章 %s', article.title)
+			next(err)
+		})
+	})
 })
 
 
