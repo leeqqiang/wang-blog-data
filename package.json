@@ -1,0 +1,22 @@
+{
+  "name": "wang-blog-data",
+  "version": "0.0.1",
+  "description": "crawler for Visiblemind.org based on node.js es6 babel request cheerio async debug entities mongoose etc",
+  "main": "./src/request.js",
+  "scripts": {
+    "test": "npm test",
+    "request": "DEBUG=request babel-node ./src/request.js"
+  },
+  "author": "leeqqiang",
+  "license": "MIT",
+  "devDependencies": {
+    "async": "^2.0.1",
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "cheerio": "^0.22.0",
+    "debug": "^2.2.0",
+    "entities": "^1.1.1",
+    "mongoose": "^4.6.0",
+    "request": "^2.74.0"
+  }
+}
